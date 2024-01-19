@@ -2,11 +2,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shop_app/layout/shop_app_layout/cubit/cubit.dart';
+import 'package:shop_app/layout/shop_app_layout/cubit/states.dart';
+import 'package:shop_app/models/shop_app/catogry_model.dart';
+import 'package:shop_app/shared/components/components.dart';
 
-import '../../../layout/shop_app_layout/cubit/cubit.dart';
-import '../../../layout/shop_app_layout/cubit/states.dart';
-import '../../../models/shop_app/catogry_model.dart';
-import '../../../shared/components/components.dart';
 
 class CatogryScreen extends StatelessWidget {
   const CatogryScreen({Key? key}) : super(key: key);

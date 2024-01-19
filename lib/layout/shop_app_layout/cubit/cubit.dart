@@ -4,12 +4,12 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:shop_app/layout/shop_app_layout/cubit/states.dart';
+import 'package:shop_app/models/shop_app/icon_fav_model.dart';
+import 'package:shop_app/models/shop_app/shop_login.dart';
 import '../../../models/shop_app/catogry_model.dart';
 import '../../../models/shop_app/favorites_model.dart';
 
 import '../../../models/shop_app/home_model.dart';
-import '../../../models/shop_app/icon_fav_model.dart';
-import '../../../models/shop_app/shop_login.dart';
 import '../../../modules/shop_app/catogries/catogry_view.dart';
 import '../../../modules/shop_app/favorites/favorites_view.dart';
 import '../../../modules/shop_app/products/products_view.dart';
@@ -87,7 +87,6 @@ class ShopCubit extends Cubit<ShopStates> {
       }else {
         getFAVData();
       }
-
       emit(ShopFAVSuccessState(favModel!));
     }).catchError((onError) {
       fav[productID] = !fav[productID]!;

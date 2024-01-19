@@ -2,11 +2,12 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:shop_app/layout/shop_app_layout/cubit/cubit.dart';
+import 'package:shop_app/layout/shop_app_layout/cubit/states.dart';
+import 'package:shop_app/shared/components/components.dart';
+import 'package:shop_app/shared/components/constants.dart';
 
-import '../../../layout/shop_app_layout/cubit/cubit.dart';
-import '../../../layout/shop_app_layout/cubit/states.dart';
-import '../../../shared/components/components.dart';
-import '../../../shared/components/constants.dart';
+
 
 class SettingsScreen extends StatelessWidget {
   var formkey = GlobalKey<FormState>();
